@@ -12,7 +12,7 @@ const PORT = process.env.PORT;
 const rateLimitWindowMs = process.env.RATE_LIMIT_WINDOW_MS || 60 * 1000;
 const rateLimitMax = process.env.RATE_LIMIT_MAX || 5;
 const cacheTTL = process.env.CACHE_TTL || 300;
-
+app.set('trust proxy', true);
 const cache = new NodeCache({ stdTTL: cacheTTL });
 
 app.use(express.json());
