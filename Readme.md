@@ -60,7 +60,7 @@ This is a basic Node.js application that includes rate limiting, token generatio
 - **Example Request:**
 
     ```sh
-    curl "http://localhost:3000/generate-token?id=1&username=testuser"
+    curl "app-demo-node-bkapemhuecbhhcbe.eastus-01.azurewebsites.net/generate-token?id=1&username=testuser"
     ```
 
 - **Example Response:**
@@ -81,7 +81,7 @@ This is a basic Node.js application that includes rate limiting, token generatio
 - **Example Request:**
 
     ```sh
-    curl -H "authentication: <your-jwt-token>" "http://localhost:3000/app/json"
+    curl -H "authentication: <your-jwt-token>" "app-demo-node-bkapemhuecbhhcbe.eastus-01.azurewebsites.net/app/json"
     ```
 
 - **Example Response:**
