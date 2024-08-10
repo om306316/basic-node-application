@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken');
 const NodeCache = require("node-cache");
 
 const user = { id: 1, username: 'testuser' };
-const secretKey = process.env.SECRET_KEY;
+const secretKey = process.env.SECRET_KEY || 'your-secret-key';
 const PORT = process.env.PORT;
 const rateLimitWindowMs = process.env.RATE_LIMIT_WINDOW_MS || 60 * 1000;
 const rateLimitMax = process.env.RATE_LIMIT_MAX || 5;
